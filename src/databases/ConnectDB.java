@@ -299,8 +299,8 @@ public class ConnectDB {
             System.out.println(user.getName()+ " " + user.getId());
         }
         String message = insertToMongoDB(new User("Tanima Chowdhury", 3539));
-        List<User> user = readFromMongoDB();
-        */
+        List<User> user = readFromMongoDB();*/
+
 
     }
 
