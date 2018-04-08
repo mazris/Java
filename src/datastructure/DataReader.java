@@ -24,7 +24,12 @@ public class DataReader {
 		 */
 
 		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car";
-		BufferedReader br = new BufferedReader(new FileReader(textFile));
+		BufferedReader br = null;
+		try {
+			br = new BufferedReader(new FileReader(textFile));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 		String text ;
 		while ((text = br.readLine())!=null){
 			System.out.println(text);

@@ -34,7 +34,7 @@ public class FortuneEmployee {
 		EmployeeInfo.calculateEmployeePension(10000);
 
 		ConnectDB connection = new ConnectDB();
-		//connection.insertProfileToMySql("employee","column1","column2");
+		connection.insertProfileToMySql("employees","column1","column2");
 		connection.connectToMySql();
 
 	}

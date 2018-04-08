@@ -248,7 +248,7 @@ public class ConnectDB {
         try {
             connectToMySql();
                 ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
-                ps.setString(1,"Ankita Sing");
+                ps.setString(1,"Siam");
                 ps.setInt(2,3590);
                 ps.executeUpdate();
 
@@ -303,5 +303,6 @@ public class ConnectDB {
 
 
     }
+
 
 }
