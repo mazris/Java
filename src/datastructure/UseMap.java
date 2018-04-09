@@ -51,7 +51,7 @@ public class UseMap {
 		}
 
 		ConnectDB connect = new ConnectDB();
-		connect.connectToMySql();
+		connect.insertDataFromMapToMySql((Map<String, List<String>>) map,"departments","employees");
 	}
 
 }
