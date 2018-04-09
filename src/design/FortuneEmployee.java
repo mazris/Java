@@ -35,7 +35,7 @@ public class FortuneEmployee {
 
 		ConnectDB connection = new ConnectDB();
 		connection.insertProfileToMySql("employees","column1","column2");
-		connection.connectToMySql();
+
 
 	}
 

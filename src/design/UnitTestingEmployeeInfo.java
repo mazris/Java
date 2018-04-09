@@ -10,5 +10,6 @@ public class UnitTestingEmployeeInfo {
         Assert.assertEquals(EmployeeInfo.calculateEmployeeBonus(10000,8),1000.0);
         Assert.assertEquals(EmployeeInfo.calculateEmployeePension(20000),2000.0);
 
+        Assert.assertEquals(100,100);
     }
 }

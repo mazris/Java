@@ -3,20 +3,15 @@ package design;
 import java.util.Scanner;
 
 public class EmployeeInfo extends AbstractEmployee implements Employee {
-	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
  * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
  * go to FortuneEmployee class to apply all the fields and attributes.
- * 
  * Important: YOU MUST USE the 
  * OOP(abstraction,Encapsulation, Inheritance and Polymorphism) concepts in every level possible.
  * Use all kind of keywords(super,this,static,final........)
  * Implement Nested class.
- * Use Exception Handling.
- *
- */
-
+ * Use Exception Handling.*/
 	public static String getCompanyName() {
 		return companyName;
 	}
@@ -24,25 +19,16 @@ public class EmployeeInfo extends AbstractEmployee implements Employee {
 	public static void setCompanyName(String companyName) {
 		EmployeeInfo.companyName = companyName;
 	}
-
-	/*
-	 * declare few static and final fields and some non-static fields
-	 */
+	/*declare few static and final fields and some non-static fields*/
 	private static String companyName;
-
-
 	private String name;
 	private int employeeID, employeeAge;
 	public int salary;
 	private int performance;
 	static String address;
-
-	
-	/*
-	 * You must implement the logic for below 2 methods and 
+	/*You must implement the logic for below 2 methods and
 	 * following 2 methods are prototype as well for other methods need to be design,
-	 * as you will come up with the new ideas.
-	 */
+	 * as you will come up with the new ideas.*/
 	
 	/*
 	 * you must have multiple constructor.
