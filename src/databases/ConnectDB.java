@@ -265,6 +265,22 @@ public class ConnectDB {
         }
     }
 
+    public void insertNewDataFromMapToMySql(List<String> departments,String tableName, String columnName)
+    {
+        try {
+            connectToMySql();
+            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
+            ps.setString(1, String.valueOf(departments));
+
+            ps.executeUpdate();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
     public void insertDataFromMapToMySql(Map<String, List<String>> list,String tableName, String columnName)
     {
         try {

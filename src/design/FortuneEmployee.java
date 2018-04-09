@@ -23,8 +23,11 @@ public class FortuneEmployee {
 		EmployeeInfo employee2 = new EmployeeInfo("John",102);
 		EmployeeInfo employee3 = new EmployeeInfo("Jason",30,103);
 
-		employee1.setName("Siam");
-		System.out.println(employee1.getName());
+		EmployeeInfo.nestedclass nestedrefff = employee3.new nestedclass();
+		nestedrefff.nestedMethod();
+
+
+
 
 		employee2.setName("People And Tech");
 		System.out.println(employee2.getName());

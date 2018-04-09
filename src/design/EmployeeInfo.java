@@ -108,8 +108,9 @@ public class EmployeeInfo extends AbstractEmployee implements Employee {
 		return name;
 	}
 
-	public void setName(String name) {
+	public String setName(String name) {
 		this.name = name;
+		return name;
 	}
 
 
@@ -199,5 +200,16 @@ public class EmployeeInfo extends AbstractEmployee implements Employee {
 			return date;
 
 		}
+
+
 	}
+	nestedclass nestedRef = new nestedclass();
+	public class nestedclass{
+
+		public void nestedMethod() {
+			System.out.println("Name");
+
+		}
+	}
+
 }

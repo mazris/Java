@@ -30,5 +30,12 @@ public class LowestNumber {
 			System.out.println(st);
 		}
 	}
+	/*public static int lowestNum(int []array){
+		int a = array[0];
+		for(int i =1;i>){
+
+		}
+		return a;
+	}*/
 
 }

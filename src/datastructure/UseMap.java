@@ -16,6 +16,8 @@ public class UseMap {
 		 *
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 */
+
+
 		List<String> employees_of_mgt = new ArrayList();
 		employees_of_mgt.add("employee-1");
 		employees_of_mgt.add("employee-2");
@@ -51,7 +53,10 @@ public class UseMap {
 		}
 
 		ConnectDB connect = new ConnectDB();
-		connect.insertDataFromMapToMySql((Map<String, List<String>>) map,"departments","employees");
+		//connect.insertDataFromMapToMySql((Map<String, List<String>>) map,"department","employees");
+		connect.insertNewDataFromMapToMySql((List<String>) employees_of_mgt,"table1","employee");
+		connect.insertNewDataFromMapToMySql((List<String>) employees_of_act,"table1","employee");
+		connect.insertNewDataFromMapToMySql((List<String>) employees_of_sls,"table1","employee");
 	}
 
 }
