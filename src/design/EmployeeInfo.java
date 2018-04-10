@@ -198,18 +198,11 @@ public class EmployeeInfo extends AbstractEmployee implements Employee {
 					break;
 			}
 			return date;
-
 		}
-
-
 	}
-	nestedclass nestedRef = new nestedclass();
 	public class nestedclass{
-
 		public void nestedMethod() {
 			System.out.println("Name");
-
 		}
 	}
-
 }

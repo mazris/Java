@@ -26,20 +26,14 @@ public class FortuneEmployee {
 		EmployeeInfo.nestedclass nestedrefff = employee3.new nestedclass();
 		nestedrefff.nestedMethod();
 
-
-
-
 		employee2.setName("People And Tech");
 		System.out.println(employee2.getName());
-
 
 		EmployeeInfo.calculateEmployeeBonus(10000,7);
 		EmployeeInfo.calculateEmployeePension(10000);
 
 		ConnectDB connection = new ConnectDB();
 		connection.insertProfileToMySql("employees","column1","column2");
-
-
-	}
+}
 
 }
