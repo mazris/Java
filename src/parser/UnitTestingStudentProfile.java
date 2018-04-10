@@ -8,8 +8,8 @@ public class UnitTestingStudentProfile {
 
         Student student = new Student();
 
-        Assert.assertEquals(student.getFirstName(),"Mo");
-        //     Assert.assertEquals(student.getLastName(), "Sabuz");
+        Assert.assertEquals(student.getFirstName(),"Zan");
+        //     Assert.assertEquals(student.getLastName(), "Siam");
 
 
     }
