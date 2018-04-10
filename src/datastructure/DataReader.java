@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class DataReader {
 
@@ -31,13 +31,24 @@ public class DataReader {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+
 		String text ;
 		while ((text = br.readLine())!=null){
 			System.out.println(text);
 		}
 
+		Stack<String> wrdMap = new Stack<String>();
+		String[] splitWords = textFile.split(" ");
 
-
+		for (String word : splitWords) {
+			Integer count = wrdMap.indexOf(splitWords);
+			if (count == null) {
+				count = 0;
+			}
+			wrdMap.add(word);
+		}
+		wrdMap.push(textFile);
+		System.out.println(wrdMap);
 
 	}
 
